@@ -59,8 +59,8 @@ export default class App extends Component {
         });
     }
 
-    onToggelImportant(id) {
-        console.log(id)
+    onToggelImportant(idI) {
+        console.log(idI)
     }
 
         render () {
