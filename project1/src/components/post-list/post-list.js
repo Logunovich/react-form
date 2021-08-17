@@ -6,7 +6,7 @@ import './post-list.css';
 
 
 
-const PostList = ({posts}) => {
+const PostList = ({posts, onDeleted}) => {
     // console.log(posts)
     const elements = posts.map((item) => {
 
@@ -19,13 +19,14 @@ const PostList = ({posts}) => {
                     {/* <PostListItem  */}
                     {/* // label={itemProps.label} 
                     // important={itemProps.important} /> */}
-                     <PostListItem {...itemProps} />
+                     <PostListItem 
+                     {...itemProps} 
+                     onDelete={() => onDeleted(id)}/>
                 </li>
             )
         }
         
     });
-    console.log(elements)
 
     function isEmpty(obj) {
         for(let key in obj)
