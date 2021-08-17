@@ -60,7 +60,7 @@ export default class App extends Component {
     }
 
     onToggelImportant(id) {
-        
+        console.log(id)
     }
 
         render () {
